@@ -2,8 +2,8 @@ package rejson
 
 import (
 	"context"
-	"github.com/nitishm/go-rejson/v4/clients"
-	"github.com/nitishm/go-rejson/v4/rjs"
+	"github.com/Perseus/go-rejson/v4/clients"
+	"github.com/Perseus/go-rejson/v4/rjs"
 )
 
 // SetContext helps redis-clients, provide use of command level context

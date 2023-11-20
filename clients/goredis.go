@@ -7,7 +7,7 @@ import (
 
 	goredis "github.com/redis/go-redis/v9"
 
-	"github.com/nitishm/go-rejson/v4/rjs"
+	"github.com/Perseus/go-rejson/v4/rjs"
 )
 
 // GoRedisClientConn - an abstracted interface for goredis.Client, goredis.ClusterClient, goredis.Ring,
@@ -184,7 +184,7 @@ func (r *GoRedis) JSONNumIncrBy(key, path string, number int) (res interface{}, 
 	if err != nil {
 		return
 	}
-	return rjs.StringToBytes(res), err
+	return rjs.I64ArrayFromIFace(res), err
 }
 
 // JSONNumMultBy to increment a number by provided amount

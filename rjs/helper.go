@@ -24,6 +24,19 @@ func StringToBytes(lst interface{}) (by []byte) {
 	return
 }
 
+func I64ArrayFromIFace(lst interface{}) (i64s []int64) {
+	for _, v := range lst.([]interface{}) {
+		asI64, ok := v.(int64)
+		if !ok {
+			panic("error: something went wrong")
+		}
+
+		i64s = append(i64s, asI64)
+	}
+
+	return
+}
+
 // Value returns integral value of the ReJSON Command ID
 func (r ReJSONCommandID) Value() int32 {
 	return int32(r)

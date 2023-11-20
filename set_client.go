@@ -2,8 +2,8 @@ package rejson
 
 import (
 	"context"
-	"github.com/nitishm/go-rejson/v4/clients"
-	"github.com/nitishm/go-rejson/v4/rjs"
+	"github.com/Perseus/go-rejson/v4/clients"
+	"github.com/Perseus/go-rejson/v4/rjs"
 )
 
 // RedisClient provides interface for Client handling in the ReJSON Handler

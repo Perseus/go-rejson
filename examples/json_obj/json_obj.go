@@ -7,8 +7,8 @@ import (
 	"fmt"
 	"log"
 
-	"github.com/nitishm/go-rejson/v4"
-	"github.com/nitishm/go-rejson/v4/rjs"
+	"github.com/Perseus/go-rejson/v4"
+	"github.com/Perseus/go-rejson/v4/rjs"
 
 	"github.com/gomodule/redigo/redis"
 	goredis "github.com/redis/go-redis/v9"
